@@ -8,17 +8,16 @@ public class Actor {
 	private String firstName;
 	private String lastName;
 	private List<Film> films;
-	
-	//methods
-	public Actor() {}
-	
+
+	// methods
+	public Actor() {
+	}
+
 	public Actor(int id, String fn, String ln) {
-		this.id =id;
+		this.id = id;
 		this.firstName = fn;
 		this.lastName = ln;
 	}
-
-	
 
 	public int getId() {
 		return id;
@@ -43,7 +42,6 @@ public class Actor {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	
 
 	public List<Film> getFilms() {
 		return films;
@@ -74,6 +72,5 @@ public class Actor {
 		Actor other = (Actor) obj;
 		return id == other.id;
 	}
-	
-	
+
 }
